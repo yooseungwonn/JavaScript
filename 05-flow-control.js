@@ -29,17 +29,23 @@
 // ***
 // **
 // *  for문, while문 출력
-var line = 5;
-var result = "";
+//var line = 5;
+//var result = "";
 
-for (let i = line; i >= 1; i--) {
-  for (let j = 1; j <= i; j++) {
-    result += "*";
+//for (let i = line; i >= 1; i--) {
+//  for (let j = 1; j <= i; j++) {
+//    result += "*";
+//  }
+//  result += "\n";
+//}
+for (let i = 0; i < 5; i++) {
+    var result="";
+    for (let j = 5; j > i; j--) {
+      result += "*";
+    }
+    console.log(result);
   }
-  result += "\n";
-}
 
-console.log(result);
 
 let star="";
 let a=0;
