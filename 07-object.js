@@ -58,7 +58,7 @@ const Member = function(name, position) {
     m2.introduce();
 
     console.log("Member의 prototype:", Member.prototype);
-    console.log("m1:" + m1);
+    console.log("m1:", m1);
 
     // ES는 동적으로 속성을 추가할 수 있기 때문에
     // 기존 객체에도 동적으로 속성을 추가할 수 있다.
