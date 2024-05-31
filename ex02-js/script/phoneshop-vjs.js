@@ -19,13 +19,13 @@ function testAttributes(){
     let subs = document.getElementsByClassName("sub-image");
     console.log(".sub-image:", subs);
     // 루프를 돌면서 속성 변경
-    for(let i = 0; i < subs.length;i++){
-        subs[i].setAttribute("title", `제품: ${subs[i].getAttribute(`title`)}`);
+    //for(let i = 0; i < subs.length;i++){
+    //    subs[i].setAttribute("title", `제품: ${subs[i].getAttribute(`title`)}`);
+   // }
+    for (let sub of subs) {
+        sub.setAttribute("title", 
+            `제품: ${sub.getAttribute("title")}`);
     }
-    //for (let sub of subs) {
-    //    sub.setAttribute("title", 
-    //        `제품: ${sub.getAttribute("title")}`);
-    //}
 }
 //testAttributes();
 
