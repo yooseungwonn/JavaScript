@@ -37,16 +37,17 @@ function testAttributes(){
         // #main-image을 click하면 발생하는 이벤트 (정보) 확인
         document.getElementById("main-image").onclick = event => {
             //  이벤트 처리 함수의 첫번째 매개변수는 이벤트 정보객체
-            //alert("메인이미지 클릭!");
-            console.log(event);
+            alert("메인이미지 클릭!");
+            //console.log(event);
             //console.log("이벤트명:", event.name);
             //console.log("이벤트 발생 객체:", event.target);
         }
 
         let products = document
             .getElementsByClassName("sub-image");
-        for (let i = 0; i < products.length; i++) {
-            let product = products[i];  //  개별 요소 검색
+        //for (let i = 0; i < products.length; i++) {
+        //    let product = products[i];  //  개별 요소 검색
+            for (let product of products) {
             //console.log(product);
             //  개별 click 이벤트 핸들러 부착
             product.addEventListener("click", event => {
@@ -65,10 +66,10 @@ function testAttributes(){
         }
 
         document.getElementById("keyword")
-        .addEventListener("keypress", event =>{
+        //.addEventListener("keypress", event =>{
         //.addEventListener("keydown", event =>{
         //.addEventListener("change", event =>{
-        //.addEventListener("keyup", event =>{
+        .addEventListener("keyup", event =>{
             console.log(event);
             let message = event.target.value;
             console.log(message);
